@@ -46,4 +46,27 @@ public class SpellChecker
       }
       
     
+   
+   public void print10(){
+     for(int i = 0; i<10; i++){
+       System.out.println(dictionary[i]);
+     }
    }
+  
+  public boolean spellCheck(String s){
+    boolean response = false;
+    for(int i = 0; i< dictionary.length; i++){
+      if(dictionary[i].equals(s)){
+        response = true;
+      }
+    }
+    return response;
+  }
+  public void printStartsWith(String l){
+    for(int i = 0; i< dictionary.length; i++){
+      if(dictionary[i].startsWith(l)){
+        System.out.println(dictionary[i]);
+      }
+    }
+  }
+}
