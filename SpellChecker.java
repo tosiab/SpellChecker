@@ -9,11 +9,6 @@ public class SpellChecker
       private String[] dictionary;
       
       // WRITE Your Methods HERE!
-
-
-
-
-
       public SpellChecker() {
         try
         {

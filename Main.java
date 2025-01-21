@@ -5,6 +5,7 @@ class Main {
     SpellChecker checker = new SpellChecker();
     checker.print10();
     System.out.println(checker.spellCheck("tosia"));
+    checker.printStartsWith("a");
     /*checker.printStartsWith("b");
     /*checker.printStartsWith("ab");
     System.out.print("Enter a word to spell check or q to quit: ");
