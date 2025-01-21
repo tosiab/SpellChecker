@@ -50,17 +50,18 @@ public class SpellChecker
   
   public boolean spellCheck(String s){
     boolean response = false;
-    for(int i = 0; i< dictionary.length; i++){
-      if(dictionary[i].equals(s)){
+    for(String i: dictionary){
+      if(s.equals(i)){
         response = true;
       }
     }
     return response;
   }
   public void printStartsWith(String l){
-    for(int i = 0; i< dictionary.length; i++){
-      if(dictionary[i].startsWith(l)){
-        System.out.println(dictionary[i]);
+    for(String i: dictionary){
+      String first = i.substring(0,1);
+      if(first.equals(l)){
+        System.out.println(i);
       }
     }
   }
